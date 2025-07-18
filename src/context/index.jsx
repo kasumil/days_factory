@@ -10,4 +10,6 @@ const PageSettingContext = createContext();
 
 const ToastContext = createContext();
 
-export { AlertContext, LandingContext, AuthContext, PageSettingContext, ToastContext };
+const TabsContext = createContext();
+
+export { AlertContext, LandingContext, AuthContext, PageSettingContext, ToastContext, TabsContext };
