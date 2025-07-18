@@ -6,6 +6,7 @@ import Day4 from "../practice/days/Day4";
 import Day5 from "../practice/days/Day5";
 import Day6 from "../practice/days/Day6";
 import Day7 from "../practice/days/Day7";
+import Day8 from "../practice/days/Day8";
 
 // 라우트 타입 정의
 const ROUTE_TYPES = {
@@ -59,6 +60,12 @@ const routes = [
   {
     path: '/days/day7',
     component: Day7,
+    type: ROUTE_TYPES.PROTECTED,
+    exact: true
+  },
+  {
+    path: '/days/day8',
+    component: Day8,
     type: ROUTE_TYPES.PROTECTED,
     exact: true
   }
