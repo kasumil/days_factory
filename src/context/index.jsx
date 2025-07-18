@@ -8,4 +8,6 @@ const AuthContext = createContext();
 
 const PageSettingContext = createContext();
 
-export { AlertContext, LandingContext, AuthContext, PageSettingContext };
+const ToastContext = createContext();
+
+export { AlertContext, LandingContext, AuthContext, PageSettingContext, ToastContext };
