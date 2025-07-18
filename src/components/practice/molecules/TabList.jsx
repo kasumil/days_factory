@@ -10,7 +10,7 @@ export function TabList({ tabData }) {
             index={index}
             aria-controls={`panel-${tab.id}`}
             key={`tabs-${index}`}
-            role="tab"
+            role="tablist"
             tabs={tabData}  
             >
               {tab.label}

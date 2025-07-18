@@ -1,7 +1,7 @@
 import React from 'react'
 import { TabPanel } from '../atoms/Tab/TabPanel'
 
-function TabsPanels({ tabData }) {
+function TabPanels({ tabData }) {
   return (
     <>
         {tabData?.map((tab, index) => (
@@ -16,4 +16,4 @@ function TabsPanels({ tabData }) {
   )
 }
 
-export default TabsPanels
+export default TabPanels

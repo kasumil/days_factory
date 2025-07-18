@@ -1,7 +1,7 @@
 import React from 'react';
 import TabsProvider from '../../../context/TabsProvider';
 import TabList from '../molecules/TabList';
-import TabsPanels from '../molecules/TabsPanels';
+import TabPanels from '../molecules/TabPanels';
 
 
 export function Tabs({ tabData }) {
@@ -10,7 +10,7 @@ export function Tabs({ tabData }) {
     <TabsProvider initialActiveId={defalutId}>
       <div className="w-full max-w-md mx-auto flex-col">
         <TabList tabData={tabData} />
-        <TabsPanels tabData={tabData} />
+        <TabPanels tabData={tabData} />
       </div>
    </TabsProvider>
   );
