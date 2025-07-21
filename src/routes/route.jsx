@@ -1,4 +1,5 @@
 import Days from "../pages/Days";
+import ErrorPage from "../pages/ErrorPage";
 import Login from "../pages/Login";
 import Main from "../pages/Main";
 import Register from "../pages/Register";
@@ -7,6 +8,7 @@ import Day5 from "../practice/days/Day5";
 import Day6 from "../practice/days/Day6";
 import Day7 from "../practice/days/Day7";
 import Day8 from "../practice/days/Day8";
+import Day9 from "../practice/days/Day9";
 
 // 라우트 타입 정의
 const ROUTE_TYPES = {
@@ -68,7 +70,19 @@ const routes = [
     component: Day8,
     type: ROUTE_TYPES.PROTECTED,
     exact: true
-  }
+  },
+  {
+    path: '/days/day9',
+    component: Day9,
+    type: ROUTE_TYPES.PROTECTED,
+    exact: true
+  },
+  {
+    path: '*',
+    component: ErrorPage,
+    type: ROUTE_TYPES.PROTECTED,
+    exact: false
+  },
 ];
 
 export { routes, ROUTE_TYPES };

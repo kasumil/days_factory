@@ -9,6 +9,7 @@ import ToastProvider from './context/ToastProvider.jsx'
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
+import ThemeProvder from './context/ThemeProvider.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -17,9 +18,11 @@ createRoot(document.getElementById('root')).render(
       <AuthProvider>
         <LandingProvider>
           <ToastProvider>
-            <Router>
-              <App />
-            </Router>
+            <ThemeProvder>
+              <Router>
+                <App />
+              </Router>
+            </ThemeProvder>
           </ToastProvider>
         </LandingProvider>
       </AuthProvider>
