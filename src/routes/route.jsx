@@ -3,6 +3,7 @@ import ErrorPage from "../pages/ErrorPage";
 import Login from "../pages/Login";
 import Main from "../pages/Main";
 import Register from "../pages/Register";
+import Day10 from "../practice/days/Day10";
 import Day4 from "../practice/days/Day4";
 import Day5 from "../practice/days/Day5";
 import Day6 from "../practice/days/Day6";
@@ -74,6 +75,12 @@ const routes = [
   {
     path: '/days/day9',
     component: Day9,
+    type: ROUTE_TYPES.PROTECTED,
+    exact: true
+  },
+  {
+    path: '/days/day10',
+    component: Day10,
     type: ROUTE_TYPES.PROTECTED,
     exact: true
   },
